@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillAudify - Course Learning</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+ 
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar ka code ye hai -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px; font-weight: 700; margin-left: 30px;">
+        <span style="color: blue;">Skill</span><span style="color: orange;">Audify</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" style="display: flex; gap: 50px; margin-right: 40px; font-size: 20px;">
+          <li class="nav-item"><a class="nav-link" onclick="showSection('home')">Home</a></li>
+          <li class="nav-item"><a class="nav-link" onclick="showSection('courses')">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" onclick="showSection('player')">Player</a></li>
+          <li class="nav-item"><a class="nav-link" onclick="showSection('upload')">Upload</a></li>
+          <li class="nav-item"><a class="nav-link" href="/loginform/index.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sections start yhan se hua hai-->
+  <div class="container mt-5">
+    <div id="home" class="section">
+      <h1>Welcome to SkillAudify</h1>
+      <p>Explore and enhance your skills with curated courses.</p>
+      <div id="home" class="home-section" style="padding: 60px 20px; background-color: #0a0a0a; color: #f1f1f1; font-family: 'Segoe UI', sans-serif;">
+        <div id="home" style="padding: 60px 20px; background-color: #0a0a0a; color: #f5f5f5; font-family: 'Segoe UI', sans-serif; line-height: 1.7;">
+
+          <!-- Logo and Welcome Section ye hai  -->
+          <div style="text-align: center; margin-bottom: 40px;">
+            <img src="/images/logo.png" alt="SkillAudify Logo" style="width: 160px; height: auto; margin-bottom: 20px;">
+            <h1 style="font-size: 2.8rem; color: #ff8c00;">Welcome to SkillAudify – Learn Smart, Learn On-the-Go</h1>
+            <p style="max-width: 800px; margin: 20px auto;">
+              SkillAudify is a revolutionary audio-based learning platform designed to make skill-building more flexible, efficient, and accessible than ever before. Whether you're commuting, working out, cooking, or simply relaxing, SkillAudify transforms those idle moments into productive learning experiences.
+              <br><br>
+              <strong>No screens. No distractions. Just pure knowledge, delivered straight to your ears.</strong>
+            </p>
+          </div>
+        
+          <!-- ye intro hai What is SkillAudify -->
+          <div>
+            <h2 style="color: #1e90ff;">What is SkillAudify?</h2>
+            <p>
+              SkillAudify is your personal audio learning companion that offers high-quality, curated audio content on various in-demand skills. From web development and cybersecurity to entrepreneurship, communication, digital marketing, and more—our platform delivers short, impactful audio lessons created by experts in the field.
+            </p>
+            <p>
+              Whether you're a student, a working professional, or an enthusiastic learner, SkillAudify is designed to fit into your busy schedule and enhance your learning journey without needing to look at a screen.
+            </p>
+          </div>
+          <!-- Skill Audify Kya hai uske bare mein -->
+          <div>
+            <h2 style="color: #1e90ff;">Why Audio-Based Learning?</h2>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+              <li><strong>Learn Anytime, Anywhere:</strong> No more waiting for the right moment—learn on the go, while walking, commuting, or cooking.</li>
+              <li><strong>Reduces Screen Fatigue:</strong> A refreshing alternative to staring at screens all day, reducing eye strain and digital exhaustion.</li>
+              <li><strong>Enhances Retention and Focus:</strong> Listening improves comprehension and memory when paired with repetition or focus.</li>
+              <li><strong>Multitask with Efficiency:</strong> SkillAudify fits learning into your routine without needing separate time or space.</li>
+            </ul>
+          </div>
+        
+          <!-- Impact wali img yahan hai  -->
+          <div style="text-align: center; margin: 40px 0;">
+            <img src="/images/impact.png" alt="Audio Learning Benefits" style="max-width: 400px; width: 100%;">
+          </div>
+        
+          <!-- Impact yahan hai -->
+          <div>
+            <h2 style="color: #1e90ff;">Impact of Audio-Based Learning</h2>
+            <ul style="list-style-type: square; margin-left: 20px;">
+              <li><strong>Accessibility:</strong> Great for visually impaired learners and auditory-focused individuals.</li>
+              <li><strong>Inclusivity:</strong> A learning format that works for people with dyslexia or other learning difficulties.</li>
+              <li><strong>Improved Mental Processing:</strong> Boosts memory, verbal comprehension, and auditory processing skills.</li>
+              <li><strong>Fosters Consistency:</strong> Easy access leads to daily habits and consistent progress.</li>
+            </ul>
+          </div>
+        
+          <!-- Unique Features  SkillAudify ke ye hai -->
+          <div style="margin-top: 60px;">
+            <h2 style="color: #1e90ff;">What Makes SkillAudify Unique?</h2>
+            <ul style="list-style-type: circle; margin-left: 20px;">
+              <li><strong>Expert-Curated Lessons:</strong> Learn directly from educators and industry professionals.</li>
+              <li><strong>Bite-Sized Episodes:</strong> Quick, compact audio sessions to fit your time and attention span.</li>
+              <li><strong>Personalized Learning Paths:</strong> Choose skill tracks and follow structured paths designed for progress.</li>
+              <li><strong>Offline Access:</strong> Download content and learn anywhere—even without internet.</li>
+              <li><strong>Community Engagement:</strong> Join live audio rooms, discussions, and quizzes with peers and mentors.</li>
+            </ul>
+          </div>
+        
+          <!--Skill wali img yahan hai  -->
+          <div style="text-align: center; margin: 50px 0;">
+            <img src="/images/img.png" alt="Skills Offered by SkillAudify" style="max-width: 600px; width: 100%;">
+          </div>
+        
+          <!-- kon kon use ker sakt hai  -->
+          <div>
+            <h2 style="color: #1e90ff;">Who Is SkillAudify For?</h2>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+              <li>🎓 Students wanting to learn new skills without screen fatigue.</li>
+              <li>💼 Professionals needing to upskill while juggling a busy routine.</li>
+              <li>💡 Creators, developers, and entrepreneurs hungry for knowledge.</li>
+              <li>⏱️ Anyone who wants to transform idle time into power-packed learning.</li>
+            </ul>
+          </div>
+        
+          <!-- Call to Action -->
+          <div style="text-align: center; margin-top: 60px;">
+            <h2 style="color: #ff8c00;">Start Your Skill Journey with Sound</h2>
+            <p style="max-width: 700px; margin: 0 auto;">
+              At SkillAudify, we believe that learning should be accessible, engaging, and adaptive to your lifestyle. In the age of mobility and multitasking, audio-based learning is not just a trend—it’s the future.
+            </p>
+            <p style="font-size: 1.2rem; margin-top: 20px; color: #1e90ff;"><strong>Join SkillAudify today and redefine the way you learn.</strong></p>
+          </div>
+        
+        </div>
+        
+      
+      </div>
+      
+    </div>
+<!--Course yahan se start hote hai -->
+    <div id="courses" class="section" style="display:none;">
+      <h2>Courses</h2>
+      <div class="row mt-4">
+        <!-- Course 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/js.png" class="course-thumbnail" alt="JavaScript Basics">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript Basics</h5>
+              <p class="card-text">Learn the fundamentals of JavaScript programming.</p>
+              <button class="btn btn-light" onclick="playTutorial('JavaScript Basics', '/Audio/js.mp3', '/images/js.png')">Play</button>
+            </div>
+          </div> 
+        </div>
+        
+        <!-- Course 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/python.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">Python for Beginners</h5>
+              <p class="card-text">Start learning Python with hands-on examples.</p>
+              <button class="btn btn-light" onclick="playTutorial('Python for Beginners', '/Audio/py.mp3', '/images/python.png')">Play</button>
+            </div>
+          </div> 
+        </div> <!--Course 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/testing.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">Software Testing for Beginners</h5>
+              <p class="card-text">Start learning Software Testing with hands-on examples.</p>
+              <button class="btn btn-light" onclick="playTutorial('Software Testing Beginners', '/Audio/st.mp3', '/images/testing.png')">Play</button>
+            </div>
+          </div> 
+        </div> <!--Course 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/java.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">Java for Beginners</h5>
+              <p class="card-text">Start learning Java with hands-on examples.</p>
+                <button class="btn btn-light" onclick="playTutorial('Java Beginners', 'jp.mp3', '/Audio/java.png')">Play</button>
+            </div>
+          </div> 
+        </div> <!--Course 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/em.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">Elon Musk- World Richest Man</h5>
+              <p class="card-text">Elon Musk Full Documentary.</p>
+              <button class="btn btn-light" onclick="playTutorial('Elon Musk Documentary', '/Audio/ema.mp3', '/images/em.png')">Play</button>
+            </div>
+          </div> 
+        </div><!--Course 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/ai.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">Artificial intelligence (AI)</h5>
+              <p class="card-text">Introduction To Artificial intelligence (AI).</p>
+              <button class="btn btn-light" onclick="playTutorial('Intro To Artificial intelligence (AI)', '/Audio/aiml.mp3', '/images/ai.png')">Play</button>
+            </div>
+          </div> 
+        </div><!--Course 7 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/CS.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">What is CyberSecurity ?</h5>
+              <p class="card-text">Introduction to  CyberSecurity.</p>
+              <button class="btn btn-light" onclick="playTutorial('What is CyberSecurity ?', '/Audio/cs.mp3', '/images/CS.png')">Play</button>
+            </div>
+          </div> 
+        </div><!--Course 8 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/vc.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">What is Vide Coding ?</h5>
+              <p class="card-text">Introduction to  Vibe Coding.</p>
+              <button class="btn btn-light" onclick="playTutorial('What is Vibe Coding ?', '/Audio/VC.mp3', '/images/vc.png')">Play</button>
+            </div>
+          </div> 
+        </div> <!--Course 9 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/bck.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">What is BlockCahain ?</h5>
+              <p class="card-text">Introduction to  BlockCahain.</p>
+              <button class="btn btn-light" onclick="playTutorial('What is BlockCahain?', '/Audio/bk.mp3', '/images/bck.png')">Play</button>
+            </div>
+          </div> 
+        </div> <!--Course 10 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/web3.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">What is WEB 3 ?</h5>
+              <p class="card-text">Introduction to  WEB 3.</p>
+              <button class="btn btn-light" onclick="playTutorial('What is WEB 3?', '/Audio/web3.mp3', '/images/web3.png')">Play</button>
+            </div>
+          </div> 
+        </div> <!--Course 11 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/cc.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">What is Cloud Computing ?</h5>
+              <p class="card-text">Introduction to  Cloud Computing .</p>
+              <button class="btn btn-light" onclick="playTutorial('What is Cloud Computing?', '/Audio/cc.mp3', '/images/cc.png')">Play</button>
+            </div>
+          </div> 
+        </div><!--Course 12 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/c.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">C language Basics ?</h5>
+              <p class="card-text">Basic Introduction to C language .</p>
+              <button class="btn btn-light" onclick="playTutorial('C language Basics ?', '/Audio/c.mp3', '/images/c.png')">Play</button>
+            </div>
+          </div> 
+        </div><!--Course 13 -->
+        <div class="col-md-4 mb-4">
+          <div class="card course-card bg-secondary text-white shadow">
+            <img src="/images/ds.png" class="course-thumbnail" alt="Python Intro">
+            <div class="card-body">
+              <h5 class="card-title">what is Data Science ?</h5>
+              <p class="card-text">Basic Introduction to Data Science .</p>
+              <button class="btn btn-light" onclick="playTutorial('what is Data Science ?', '/Audio/ds.mp3', '/images/ds.png')">Play</button>
+            </div>
+          </div> 
+        </div>
+        <!-- or course add kerna hai to yahan se ker sakto ho guys -->
+      </div>
+    </div>
+
+    <div id="player" class="section" style="display:none;">
+      <div class="container mt-5">
+        <div class="card text-center bg-dark text-white shadow-lg">
+          <div class="card-body">
+            <img src="/images/thumbnail.png" alt="Thumbnail" class="audio-thumbnail" id="audioThumbnail">
+            <h5 class="card-title" id="audioTitle">Select a Tutorial</h5>
+
+            <!-- Audio Element -->
+            <audio id="mainAudio" src="" ontimeupdate="updateProgress()" onloadedmetadata="setDuration()"></audio>
+
+            <!-- Music Player Bar ye raha -->
+            <div class="music-player-bar d-flex flex-column align-items-center mt-3">
+              <div class="d-flex justify-content-between w-100" style="max-width: 400px;">
+                <span id="currentTime">00:00</span>
+                <span id="totalDuration">00:00</span>
+              </div>
+
+              <input type="range" id="progressBar" value="0" min="0" max="100" step="1"
+                     class="form-range w-100" style="max-width: 400px;" onchange="seekAudio(this.value)">
+
+              <div class="btn-group mt-3" role="group">
+                <button class="btn btn-outline-light" onclick="rewindAudio()"><i class="bi bi-skip-backward-fill"></i></button>
+                <button class="btn btn-outline-light" onclick="togglePlay()" id="playPauseBtn"><i class="bi bi-play-fill"></i></button>
+                <button class="btn btn-outline-light" onclick="speedUpAudio()"><i class="bi bi-speedometer"></i></button>
+                <button class="btn btn-outline-light" onclick="forwardAudio()"><i class="bi bi-fast-forward-fill"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="upload" class="section" style="display:none;">
+      <h2>Upload Resources</h2>
+      <form>
+        <div class="mb-3">
+          <label for="courseTitle" class="form-label">Course Title</label>
+          <input type="text" class="form-control" id="courseTitle" required>
+        </div>
+        <div class="mb-3">
+          <label for="pdfFile" class="form-label">PDF File</label>
+          <input type="file" class="form-control" id="pdfFile" accept=".pdf">
+        </div>
+        <div class="mb-3">
+          <label for="videoFile" class="form-label">Video File</label>
+          <input type="file" class="form-control" id="videoFile" accept="video/*">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScripts Yhan hai -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
